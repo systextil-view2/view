@@ -1,0 +1,61 @@
+/* Responsividade para a Sidebar */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 100% !important;
+    min-height: auto !important;
+    border-right: none !important;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-container {
+    padding: 16px !important;
+  }
+  
+  .report-card {
+    padding: 12px !important;
+  }
+  
+  .report-actions {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  
+  .report-actions button {
+    width: 100% !important;
+  }
+}
+
+/* Animações suaves */
+.sidebar-container {
+  transition: all 0.3s ease;
+}
+
+.report-card {
+  transition: all 0.2s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Scrollbar customizada */
+.sidebar-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.sidebar-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.sidebar-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
